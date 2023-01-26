@@ -198,3 +198,24 @@ main section {
 .shoptitledetail {
   border-bottom: 3px solid orange;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.direct {
+  color: orange;
+}
+
+.information {
+  font-size: 3rem;
+  text-decoration: underline orange;
+
+}
+
+.alart {
+  text-align: center;
+  border: 3px solid black;
+  padding: 1rem;
+}
