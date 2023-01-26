@@ -17,11 +17,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link rel="icon" href="logo.jpg">
   <link rel="apple-touch-icon" href="logo.jpg">
+
+  <!--ネットからコピペしたスライドショー部分-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        auto: true,
+        pause: 5000,
+      });
+    });
+  </script>
+
 </head>
 
 <body>
-  <section class="language"><span><a href="https://mochizukiyuto.github.io/witzozan.jp/">日本語</a></span>
-    <span><a href="https://mochizukiyuto.github.io/witzozan.cn/">中文</a></span>
+  <section class="language"><span><a href="https://mochizukiyuto.github.io/witzozan.jp/"><span class="direct">>></span>日本語</a></span>
+    <span><a href="https://mochizukiyuto.github.io/witzozan.cn/"><span class="direct">>></span>中文</a></span>
   </section>
   <span class="nav_toggle">
     <i></i>
@@ -31,12 +45,12 @@
   <nav class="nav">
     <h2>WitZozan</h2>
     <ul class="nav_menu_ul">
-      <li class="nav_menu_li"><a href="#detail">What is WitZozan</a></li>
-      <li class="nav_menu_li"><a href="#event name">The mean of WitZozan</a></li>
-      <li class="nav_menu_li"><a href="#logodetail">The mean of the logo</a></li>
-      <li class="nav_menu_li"><a href="#shop">Exhibitor introduction</a></li>
-      <li class="nav_menu_li"><a href="#blog">Mini blog</a></li>
-      <li class="nav_menu_li"><a href="#recruitment">Recruitment of person from branch</a></li>
+      <li class="nav_menu_li"><a href="#detail">What is WitZozan ▸</a></li>
+      <li class="nav_menu_li"><a href="#event name">The mean of WitZozan ▸</a></li>
+      <li class="nav_menu_li"><a href="#logodetail">The mean of the logo ▸</a></li>
+      <li class="nav_menu_li"><a href="#shop">Exhibitor introduction ▸</a></li>
+      <li class="nav_menu_li"><a href="#blog">Mini blog ▸</a></li>
+      <li class="nav_menu_li"><a href="#recruitment">Recruitment of person from branch ▸</a></li>
     </ul>
   </nav>
   <header>
@@ -48,9 +62,9 @@
     <section class="detail"><a name="detail"></a>
       <h1><span class="headline">What is WitZozan</span></h1>
       <ul>
-        <li><img alt="symbol" src="symbol.jpg" width="30em"> When</li>4th February 2023
-        <li><img alt="symbol" src="symbol.jpg" width="30em"> Where</li>Central Square, R-DEPOT
-        <li><img alt="symbol" src="symbol.jpg" width="30em"> Overview</li>
+        <li><img alt="symbol" src="symbol.jpg" width="40em"> <span class="information">When</span></li>4th February 2023
+        <li><img alt="symbol" src="symbol.jpg" width="40em"> <span class="information">Where</span></li>Central Square, R-DEPOT
+        <li><img alt="symbol" src="symbol.jpg" width="40em" z-index="9999"> <span class="information">Overview</span></li>
         University of Nagano Dormitory Festival:WitZozan<br>
         Hot food and drinks gather in Central Square, so you can warm up your chilled body while the band heats up the
         venue on stage. <br>
@@ -78,18 +92,27 @@
     </section>
     <section class="shop"><a name="shop"></a>
       <h1><span class="headline">Exhibitor introduction</span></h1>
+      <p class="alart">
+        ⚠️ There is ⚠️ <br>
+        a phenomenon that the image cannot be loaded.
+        We apologize for the inconvenience, but please update the page.
+      </p>
       <div>
         <div class="shoptitle">
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo1">
           <span class="shoptitledetail">Shiawase no Ougon Taiyaki Nagano</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop1-1.jpg" alt="" width="100%">
-        <img src="shop1-2.jpg" alt="" width="100%">
-        <img src="shop1-3.jpg" alt="" width="100%">
-        <img src="shop1-4.jpg" alt="" width="100%">
-        <img src="shop1-5.jpg" alt="" width="100%">
-        <img src="shop1-6.jpg" alt="" width="100%">
+        
+        <div class="slider">
+          <img src="shop1-1.png" width="" height="" alt="">
+          <img src="shop1-2.png" width="" height="" alt="">
+          <img src="shop1-3.png" width="" height="" alt="">
+          <img src="shop1-4.png" width="" height="" alt="">
+          <img src="shop1-5.png" width="" height="" alt="">
+          <img src="shop1-6.png" width="" height="" alt="">
+        </div>
+
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           ・Grilled croissant sea bream (bean paste, custard)<br>
@@ -108,8 +131,10 @@
           <span class="shoptitledetail">Hot Sand Swamp</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop2-1.jpg" alt="" width="100%">
-        <img src="shop2-2.jpg" alt="" width="100%">
+        <div class="slider">
+          <img src="shop2-1.png" width="" height="" alt="">
+          <img src="shop2-2.png" width="" height="" alt="">
+        </div>
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           Tandoori Chicken Sandwich 800 yen<br>
@@ -127,8 +152,10 @@
           <span class="shoptitledetail">Baba Curry</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop3-1.jpg" alt="" width="100%">
-        <img src="shop3-2.jpg" alt="" width="100%">
+        <div class="slider">
+          <img src="shop3-1.png" width="" height="" alt="">
+          <img src="shop3-2.png" width="" height="" alt="">
+        </div>
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           2 types of curry (1000 yen each)<br>
@@ -148,10 +175,13 @@
           <span class="shoptitledetail">stellina-pitta</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop4-1.jpg" alt="" width="100%">
-        <img src="shop4-2.jpg" alt="" width="100%">
-        <img src="shop4-3.jpg" alt="" width="100%">
-        <img src="shop4-4.jpg" alt="" width="100%">
+        <div class="slider">
+          <img src="shop4-1.png" width="" height="" alt="">
+          <img src="shop4-2.png" width="" height="" alt="">
+          <img src="shop4-3.png" width="" height="" alt="">
+          <img src="shop4-4.png" width="" height="" alt="">
+          
+        </div>
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           Neapolitan pizza and dry-cured ham ¥1000-¥2000<br>
@@ -167,9 +197,12 @@
           <span class="shoptitledetail">Happy Pocket</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop5-1.jpg" alt="" width="100%">
-        <img src="shop5-2.jpg" alt="" width="100%">
-        <img src="shop5-3.jpg" alt="" width="100%">
+        <div class="slider">
+          <img src="shop5-1.png" width="" height="" alt="">
+          <img src="shop5-2.png" width="" height="" alt="">
+          <img src="shop5-3.png" width="" height="" alt="">
+          
+        </div>
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           Whole wheat crepe 500-800 yen<br>
@@ -189,9 +222,11 @@
           <span class="shoptitledetail">Cafe Gureneko</span>
           <img alt="symbol" src="symbol.jpg" width="60px" class="logo2">
         </div><br>
-        <img src="shop6-1.jpg" alt="" width="100%">
-        <img src="shop6-2.jpg" alt="" width="100%">
-        <img src="shop6-3.jpg" alt="" width="100%">
+        <div class="slider">
+          <img src="shop6-1.png" width="" height="" alt="">
+          <img src="shop6-2.png" width="" height="" alt="">
+          <img src="shop6-3.png" width="" height="" alt="">
+        </div>
         <p class="menu">
           <img alt="symbol" src="symbol.jpg" width="30em">menu<br>
           Home-roasted coffee<br>
