@@ -169,6 +169,8 @@ main section {
   border-radius: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .menu {
@@ -197,6 +199,7 @@ main section {
 
 .shoptitledetail {
   border-bottom: 3px solid orange;
+  font-size: 2.5rem;
 }
 
 a {
